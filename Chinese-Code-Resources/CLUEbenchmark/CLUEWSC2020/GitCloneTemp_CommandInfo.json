@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/CLUEWSC2020 undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/CLUEWSC2020",
+    "repo": "https://github.com/CLUEbenchmark/CLUEWSC2020",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/CLUEWSC2020",
+    "startTime": "2023-11-12T09:30:33.030Z",
+    "endTime": "2023-11-12T09:30:33.614Z",
+    "childProcessPid": 14397,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--CLUEWSC2020--14397",
+    "executionErrors": []
+}

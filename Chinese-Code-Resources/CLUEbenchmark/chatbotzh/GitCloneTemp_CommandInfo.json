@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/chatbotzh undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/chatbotzh",
+    "repo": "https://github.com/CLUEbenchmark/chatbotzh",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/chatbotzh",
+    "startTime": "2023-11-12T09:32:12.614Z",
+    "endTime": "2023-11-12T09:32:14.939Z",
+    "childProcessPid": 14539,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--chatbotzh--14539",
+    "executionErrors": []
+}

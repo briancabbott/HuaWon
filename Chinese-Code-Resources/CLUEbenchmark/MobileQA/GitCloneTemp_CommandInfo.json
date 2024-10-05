@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/MobileQA undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/MobileQA",
+    "repo": "https://github.com/CLUEbenchmark/MobileQA",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/MobileQA",
+    "startTime": "2023-11-12T09:31:00.987Z",
+    "endTime": "2023-11-12T09:31:04.845Z",
+    "childProcessPid": 14466,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--MobileQA--14466",
+    "executionErrors": []
+}

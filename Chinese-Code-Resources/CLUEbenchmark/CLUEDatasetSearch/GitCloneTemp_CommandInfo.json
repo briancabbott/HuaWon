@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/CLUEDatasetSearch undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/CLUEDatasetSearch",
+    "repo": "https://github.com/CLUEbenchmark/CLUEDatasetSearch",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/CLUEDatasetSearch",
+    "startTime": "2023-11-12T09:30:29.501Z",
+    "endTime": "2023-11-12T09:30:30.856Z",
+    "childProcessPid": 14381,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--CLUEDatasetSearch--14381",
+    "executionErrors": []
+}

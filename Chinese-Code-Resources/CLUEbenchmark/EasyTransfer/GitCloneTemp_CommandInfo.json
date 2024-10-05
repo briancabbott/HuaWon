@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/EasyTransfer undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/EasyTransfer",
+    "repo": "https://github.com/CLUEbenchmark/EasyTransfer",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/EasyTransfer",
+    "startTime": "2023-11-12T09:30:38.941Z",
+    "endTime": "2023-11-12T09:30:40.032Z",
+    "childProcessPid": 14422,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--EasyTransfer--14422",
+    "executionErrors": []
+}

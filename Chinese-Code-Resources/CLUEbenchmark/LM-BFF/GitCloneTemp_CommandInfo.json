@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/LM-BFF undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/LM-BFF",
+    "repo": "https://github.com/CLUEbenchmark/LM-BFF",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/LM-BFF",
+    "startTime": "2023-11-12T09:30:54.684Z",
+    "endTime": "2023-11-12T09:30:55.892Z",
+    "childProcessPid": 14455,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--LM-BFF--14455",
+    "executionErrors": []
+}

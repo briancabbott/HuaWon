@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/SimCLUE undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/SimCLUE",
+    "repo": "https://github.com/CLUEbenchmark/SimCLUE",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/SimCLUE",
+    "startTime": "2023-11-12T09:31:11.272Z",
+    "endTime": "2023-11-12T09:31:14.161Z",
+    "childProcessPid": 14488,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--SimCLUE--14488",
+    "executionErrors": []
+}

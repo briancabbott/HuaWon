@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/CLUEmotionAnalysis2020 undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/CLUEmotionAnalysis2020",
+    "repo": "https://github.com/CLUEbenchmark/CLUEmotionAnalysis2020",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/CLUEmotionAnalysis2020",
+    "startTime": "2023-11-12T09:30:33.615Z",
+    "endTime": "2023-11-12T09:30:35.077Z",
+    "childProcessPid": 14402,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--CLUEmotionAnalysis2020--14402",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/KGQA undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/KGQA",
+    "repo": "https://github.com/CLUEbenchmark/KGQA",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/KGQA",
+    "startTime": "2023-11-12T09:30:45.274Z",
+    "endTime": "2023-11-12T09:30:45.889Z",
+    "childProcessPid": 14433,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--KGQA--14433",
+    "executionErrors": []
+}

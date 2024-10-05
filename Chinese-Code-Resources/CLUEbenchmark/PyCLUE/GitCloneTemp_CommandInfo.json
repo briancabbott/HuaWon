@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/PyCLUE undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/PyCLUE",
+    "repo": "https://github.com/CLUEbenchmark/PyCLUE",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/PyCLUE",
+    "startTime": "2023-11-12T09:31:07.074Z",
+    "endTime": "2023-11-12T09:31:08.078Z",
+    "childProcessPid": 14477,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--PyCLUE--14477",
+    "executionErrors": []
+}

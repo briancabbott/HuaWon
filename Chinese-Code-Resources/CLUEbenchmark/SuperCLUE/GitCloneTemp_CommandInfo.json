@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/SuperCLUE undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/SuperCLUE",
+    "repo": "https://github.com/CLUEbenchmark/SuperCLUE",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/SuperCLUE",
+    "startTime": "2023-11-12T09:31:14.162Z",
+    "endTime": "2023-11-12T09:31:19.884Z",
+    "childProcessPid": 14493,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--SuperCLUE--14493",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/OCNLI undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/OCNLI",
+    "repo": "https://github.com/CLUEbenchmark/OCNLI",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/OCNLI",
+    "startTime": "2023-11-12T09:31:04.846Z",
+    "endTime": "2023-11-12T09:31:07.073Z",
+    "childProcessPid": 14471,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--OCNLI--14471",
+    "executionErrors": []
+}

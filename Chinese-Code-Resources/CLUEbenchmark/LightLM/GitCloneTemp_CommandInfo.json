@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/LightLM undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/LightLM",
+    "repo": "https://github.com/CLUEbenchmark/LightLM",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/LightLM",
+    "startTime": "2023-11-12T09:30:55.893Z",
+    "endTime": "2023-11-12T09:31:00.986Z",
+    "childProcessPid": 14460,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--LightLM--14460",
+    "executionErrors": []
+}

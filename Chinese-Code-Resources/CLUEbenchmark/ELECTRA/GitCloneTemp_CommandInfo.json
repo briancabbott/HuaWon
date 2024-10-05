@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/ELECTRA undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/ELECTRA",
+    "repo": "https://github.com/CLUEbenchmark/ELECTRA",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/ELECTRA",
+    "startTime": "2023-11-12T09:30:37.850Z",
+    "endTime": "2023-11-12T09:30:38.941Z",
+    "childProcessPid": 14417,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--ELECTRA--14417",
+    "executionErrors": []
+}

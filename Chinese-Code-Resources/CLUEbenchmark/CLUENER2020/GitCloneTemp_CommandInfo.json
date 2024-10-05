@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/CLUENER2020 undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/CLUENER2020",
+    "repo": "https://github.com/CLUEbenchmark/CLUENER2020",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/CLUENER2020",
+    "startTime": "2023-11-12T09:30:30.857Z",
+    "endTime": "2023-11-12T09:30:31.916Z",
+    "childProcessPid": 14387,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--CLUENER2020--14387",
+    "executionErrors": []
+}

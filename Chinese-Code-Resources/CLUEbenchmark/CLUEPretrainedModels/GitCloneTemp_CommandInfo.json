@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/CLUEPretrainedModels undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/CLUEPretrainedModels",
+    "repo": "https://github.com/CLUEbenchmark/CLUEPretrainedModels",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/CLUEPretrainedModels",
+    "startTime": "2023-11-12T09:30:31.916Z",
+    "endTime": "2023-11-12T09:30:33.030Z",
+    "childProcessPid": 14392,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--CLUEPretrainedModels--14392",
+    "executionErrors": []
+}

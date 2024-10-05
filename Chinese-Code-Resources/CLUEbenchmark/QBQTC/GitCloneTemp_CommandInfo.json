@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/QBQTC undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/QBQTC",
+    "repo": "https://github.com/CLUEbenchmark/QBQTC",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/QBQTC",
+    "startTime": "2023-11-12T09:31:08.078Z",
+    "endTime": "2023-11-12T09:31:11.271Z",
+    "childProcessPid": 14482,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--QBQTC--14482",
+    "executionErrors": []
+}

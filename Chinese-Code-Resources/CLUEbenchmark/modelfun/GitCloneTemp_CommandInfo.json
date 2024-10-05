@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/CLUEbenchmark/modelfun undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/modelfun",
+    "repo": "https://github.com/CLUEbenchmark/modelfun",
+    "targetPath": "undefined\\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/modelfun",
+    "startTime": "2023-11-12T09:32:14.952Z",
+    "endTime": "2023-11-12T09:32:24.243Z",
+    "childProcessPid": 14545,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--CLUEbenchmark--modelfun--14545",
+    "executionErrors": []
+}
