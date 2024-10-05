@@ -1,0 +1,71 @@
+{
+  "name": "chinese-colors",
+  "version": "4.0.0",
+  "description": "Chinese color cheat sheet",
+  "main": "src/main.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerosoul/chinese-colors.git"
+  },
+  "keywords": [
+    "color",
+    "chinese",
+    "design",
+    "wallpaper",
+    "react",
+    "tool",
+    "amazing"
+  ],
+  "author": "tristan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zerosoul/chinese-colors/issues"
+  },
+  "homepage": "https://colors.ichuantong.cn",
+  "dependencies": {
+    "color-convert": "^2.0.1",
+    "file-saver": "^2.0.5",
+    "html2canvas": "^1.4.1",
+    "jinrishici": "^1.0.6",
+    "pinyin": "^3.1.0",
+    "react": "^18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.2.0",
+    "react-github-btn": "^1.4.0",
+    "react-icons": "^5.0.0",
+    "react-router-dom": "^6.21.1",
+    "smooth-scroll-into-view-if-needed": "^2.0.2",
+    "styled-components": "^6.1.2",
+    "styled-reset": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.1.1",
+    "vite": "^5.0.10"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

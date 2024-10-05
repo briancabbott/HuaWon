@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/StarCC0/starcc0.github.io undefined\\SCC--11-12-2023--8ykxyCRSeMwg6mioziwTsK/starcc0.github.io",
+    "repo": "https://github.com/StarCC0/starcc0.github.io",
+    "targetPath": "undefined\\SCC--11-12-2023--8ykxyCRSeMwg6mioziwTsK/starcc0.github.io",
+    "startTime": "2023-11-12T10:00:05.933Z",
+    "endTime": "2023-11-12T10:00:07.623Z",
+    "childProcessPid": 14920,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/HuaWon/Chinese-Code-Resources/workingdir/--StarCC0--starcc0.github.io--14920",
+    "executionErrors": []
+}
