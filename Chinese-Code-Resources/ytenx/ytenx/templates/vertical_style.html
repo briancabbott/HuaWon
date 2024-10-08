@@ -1,0 +1,294 @@
+<style type="text/css">
+  .display-unless-with-vertical-layout, #switch-to-vertical-layout {
+    display: none;
+  }
+  html {
+    padding-bottom: 60px;
+  }
+  ipa {
+    writing-mode: horizontal-tb;
+    direction: ltr;
+  }
+  .yonh,
+  .yonh td {
+    text-orientation: upright;
+    white-space: nowrap;
+  }
+  td {
+    min-height: 1em;
+  }  
+  .full-height-only-with-vertical-layout {
+    height: 100%;
+  }
+  .container-main {
+    direction: rtl;
+    height: 100%;
+    width: auto;
+    overflow: auto;
+  }
+  .container-main>.write-as-layout-direction {
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 90%;
+    width: auto;
+    height: 100%;
+  }  
+  .write-as-layout-direction {
+    writing-mode: vertical-rl;
+    direction: ltr;
+    text-orientation: mixed;
+    overflow: auto;
+  }
+  .write-as-layout-direction .row,
+  .write-as-layout-direction [class*="span"],
+  .write-as-layout-direction .span3,
+  .write-as-layout-direction .span4,
+  .write-as-layout-direction .span6,
+  .write-as-layout-direction .span8,
+  .write-as-layout-direction .span10 {
+    margin-left: auto;
+    width: auto;
+    float: none;
+  }
+  .write-as-layout-direction .page-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .write-as-layout-direction p {
+    line-height: 1.6;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+  .write-as-layout-direction li {
+    line-height: 1.6;
+  }  
+  .write-as-layout-direction .table {
+    margin-left: 20px;
+  }
+  .write-as-layout-direction table td {
+    vertical-align: middle;
+  }
+  .write-as-layout-direction .table-bordered tbody:first-child tr:first-child td {
+    border-top: 1px solid #ddd;
+  }
+  .write-as-layout-direction .controls {
+    margin-top: 2em;
+    margin-left: 3em;
+  }
+  .write-as-layout-direction .controls>.radio:first-child,
+  .write-as-layout-direction .controls>.checkbox:first-child {
+    margin-left: 0px;    
+    padding-top: 1em;
+  }
+  .write-as-layout-direction .controls>.checkbox {
+    margin-left: 0px;    
+    padding-top: 1em;
+    margin-right: 1em;    
+  }
+  .write-as-layout-direction .controls>.checkbox.inline+.checkbox.inline {
+    margin-left: 0px;    
+  }  
+  .write-as-layout-direction .controls>.checkbox>input {
+    margin-left: auto;
+    margin-right: -1em;
+  }
+  .write-as-layout-direction .controls>.help-block {
+    margin-left: 3em;
+    padding-top: 2em;
+  }    
+  .write-as-layout-direction .control-label {
+    width: auto;
+  }
+  .write-as-layout-direction .thumbnails .thumbnail {
+    writing-mode: vertical-lr
+  }
+  .container-table-horizontal {
+    writing-mode: horizontal-tb;
+    direction: rtl;
+    text-align: right;
+    width: auto;
+  }
+  .table-horizontal {
+    writing-mode: horizontal-tb;
+    direction: rtl;
+  }  
+  .table-horizontal tr>td {
+    vertical-align: top;
+    text-align: right;
+  }
+  .thumbnail img {
+    max-height: 100%;
+  }
+  .tb-with-table-by-layout-direction {
+    writing-mode: horizontal-tb;
+    direction: rtl;    
+  }
+  .tb-with-table-by-layout-direction table {
+    writing-mode: vertical-rl;
+    text-align: right;
+    direction: ltr;
+    overflow: auto;
+  }
+  .thumbnails {
+    margin-left: auto;
+  }
+  .thumbnails>li {
+    float: none;
+  }
+  .badge-info {
+    text-orientation: upright;
+  }
+  .navbar .nav>li {
+    float: right;
+  }
+  proper-noun {
+    text-decoration-line: underline;
+  }
+  title-cn, title-cn-quote, title-cn-no-quote {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+  }
+  @media only screen and (max-width: 979px) {
+    .nav-collapse .nav>li {
+      float: none;
+    }
+  }
+  blockquote {
+    border-left: 0px;
+    border-top: 0.5em solid transparent;
+  }
+  blockquote::before {
+  }
+  .horizontal-cn {
+    writing-mode: horizontal-tb;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  .horizontal-cn a,
+  .horizontal-cn span,
+  .horizontal-cn div,
+  .horizontal-cn ul,
+  .horizontal-cn li,
+  .horizontal-cn table,
+  .horizontal-cn th,
+  .horizontal-cn td,
+  .horizontal-cn input,
+  .horizontal-cn selection option,
+  .horizontal-cn .brand,
+  .horizontal-cn .nav,
+  .horizontal-cn .btn{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  .horizontal-cn ul,
+  .horizontal-cn li,
+  .horizontal-cn table,
+  .horizontal-cn input,
+  .horizontal-cn selection option,
+  .horizontal-cn .brand,
+  .horizontal-cn .btn,
+  .horizontal-cn>.control-label,
+  .horizontal-cn>.nav-collapse>.nav,
+  .horizontal-cn>.nav-collapse>.navbar-search {
+    float: right;     
+  }
+  .sidebar-cn li,
+  .sidebar-cn a {
+    writing-mode: horizontal-tb;
+    direction: rtl;
+    unicode-bidi: bidi-override;    
+  }
+  .pagination {
+    text-align: right;
+    writing-mode: horizontal-tb;
+  }
+  .pagination li {
+    float: right;
+  }
+  .sidebar-nav {
+    writing-mode: horizontal-tb;
+    direction: rtl;
+  }  
+  .table {
+    width: auto;
+  }
+  .table-remove-border-when-vertical th,
+  .table-remove-border-when-vertical td {
+    border-top: none;
+  }
+  .latin-below {
+    writing-mode: horizontal-tb;
+    font-size: 0.618em;
+    line-height: normal;
+  }
+  .horizontal-ltr {
+    writing-mode: horizontal-tb;
+    direction: ltr;
+  }
+  .horizontal-ltr-override {
+    writing-mode: horizontal-tb;
+    direction: ltr;
+    unicode-bidi: bidi-override;    
+  }  
+  .vertical_divider {
+    width: 3px;
+    background-color: #EAEFF5;
+    display: block;
+  }
+  .ipa-tables-with-nav {
+    writing-mode: horizontal-tb;
+  }  
+  .ipa-tables-with-nav #subnav-fixed {
+    writing-mode: horizontal-tb;
+  }
+  .ipa-tables {
+    writing-mode: vertical-rl;
+  }
+  .ipa-nav-cn {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-align: center;
+  }  
+  .ipa-tables table {
+    writing-mode: horizontal-tb;
+  }
+  .ipa-table-row-header-cn  {
+    width: 1em;
+  }
+  #ipa-tables-credit {
+    text-align: right;
+  }
+  #yonh-do td {
+    text-align: center;
+  }
+  #tb-sriek {
+    height: 100%;
+  }
+  #dciangx-kox-sriek {
+    margin-bottom: 10px;
+    float: left;
+  }
+  #dciangx-kox-sriek input {
+    float: right;
+  }
+  #qim-bjin-vertical .qim_bjin_text {
+    width: 2em;
+    overflow: visible;
+  }
+  #brand span {
+    writing-mode:vertical-rl;
+    direction:ltr;
+    width:auto;
+    font-size:15px;
+    padding-left:8px;
+    color:grey;
+    background-color:rgba(255,0,0,0);
+  }
+  #search-form {
+    float: left;
+  }
+</style>

@@ -1,0 +1,54 @@
+{% extends "kyonh/layout.html" %}
+{% load ytenx %}
+{% block kyonh_yonh_miuk_active %}active{% endblock %}
+{% block title %}韻目 - 廣韻{% endblock %}
+{% block keywords %}韻目, 廣韻{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1>韻目 <small>廣韻</small></h1>
+</div>
+<div class="row">
+  <div class="span8">
+    <table class="table table-bordered table-condensed table-striped yonh">
+      <tr>
+        <th>韻攝</th>
+        <th>平</th>
+        <th>上</th>
+        <th>去</th>
+        <th>入</th>
+      </tr>
+      {% for miuk in yonh_miuk_list %}
+      <tr>
+        <td>{{miuk.gheh.cjep}}</td>
+        <td>
+          {% if miuk.bieng %}
+            <a href="{% url 'kyonh-yonh_miuk_page' miuk.bieng.dzih %}">{{miuk.bieng}}</a>
+            【{{miuk.bieng.tshiih}}】
+          {% endif %}
+        </td>
+        <td>
+          {% if miuk.dciangx %}
+            <a href="{% url 'kyonh-yonh_miuk_page' miuk.dciangx.dzih %}">{{miuk.dciangx}}</a>
+            【{{miuk.dciangx.tshiih}}】
+          {% endif %}
+        </td>
+        <td>
+          {% if miuk.khioh %}
+            <a href="{% url 'kyonh-yonh_miuk_page' miuk.khioh.dzih %}">{{miuk.khioh}}</a>
+            【{{miuk.khioh.tshiih}}】
+          {% endif %}
+        </td>
+        <td>
+          {% if miuk.njip %}
+            <a href="{% url 'kyonh-yonh_miuk_page' miuk.njip.dzih %}">{{miuk.njip}}</a>
+            【{{miuk.njip.tshiih}}】
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,34 @@
+{% extends "kyonh/layout.html" %}
+{% load ytenx %}
+{% block kyonh_cjeng_ngix_active %}active{% endblock %}
+{% block title %}聲母擬音 - 廣韻{% endblock %}
+{% block keywords %}聲母, 擬音, 聲母擬音, 廣韻, {% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1>聲母擬音 <small>廣韻</small></h1>
+</div>
+<div class="row">
+  <div class="span10">
+    <table class="table table-bordered table-condensed table-striped">
+      <tr>
+        <th>聲母</th>
+        {% for mjeng, qim in cjeng_mux_list.0.ngix.items %}
+          <th>{{mjeng}}</th>
+        {% endfor %}
+      </tr>
+      {% for cjeng in cjeng_mux_list %}
+      <tr>
+        <td><a href="{% url 'kyonh-cjeng_mux_page' cjeng.dzih %}">{{cjeng.dzih}}</a></td>
+        {% for mjeng, qim in cjeng.ngix.items %}
+          {% if qim %}
+            <td><ipa>{{qim}}</ipa></td>
+          {% else %}
+            <td></td>
+          {% endif %}
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+{% endblock %}

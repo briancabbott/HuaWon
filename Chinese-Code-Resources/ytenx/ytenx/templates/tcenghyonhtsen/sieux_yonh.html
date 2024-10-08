@@ -1,0 +1,134 @@
+{% extends "tcenghyonhtsen/layout.html" %}
+{% load ytenx %}
+{% block tcenghyonhtsen_sieux_yonh_active %}active{% endblock %}
+{% block title %}{{sieux_yonh}} - 小韻 - 洪武正韻牋{% endblock %}
+{% block keywords %}{{sieux_yonh}}, 小韻, {{sieux_yonh.pyanx}}, 反切, 洪武正韻牋, {% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1>{{sieux_yonh}} <small>洪武正韻牋第{{sieux_yonh.cioTriungZiox|sryoh}}小韻</small></h1>
+</div>
+<div class="row">
+  <div class="span4">
+    <table class="table table-bordered">
+    	<tr>
+    	  <td>小韻</td>
+    	  <td>{{sieux_yonh}}</td>
+        {% if qim_bjin_set %}
+          <td nowrap rowspan=8 class="display-only-with-vertical-layout" style="min-height:3em;">
+            <div>
+              <br>
+              {% for qim_bjin in qim_bjin_set %}
+                <audio controls src="/static/audio/GhungMyoxTcenghYonhTsen/{{qim_bjin.filename}}"></audio>
+                {% for tone, ipa in qim_bjin.tone_to_ipa_mapping %}
+                  <span class="horizontal-cn">{{tone}}</span><ipa>{{ipa|beautify_mandarin_ipa}}</ipa>&nbsp;
+                {% endfor %}
+              {% endfor %}              
+            </div>
+          </td>
+        {% endif %}        
+    	</tr>
+    	<tr>
+    	  <td>序號</td>
+        <td>{{sieux_yonh.cioTriungZiox|tsiowng_ghwaeng_srwioh:request}}</td>
+    	</tr>
+    	<tr>
+    	  <td>反切</td>
+    	  <td>
+    	  	{% if sieux_yonh.pyanx %}
+    	  		<a href="">{{sieux_yonh.pyanx.dciangx}}</a><a href="">{{sieux_yonh.pyanx.ghrax}}</a>
+    	  	{% else %}
+    	  		無
+    	  	{% endif %}
+    	  </td>
+    	</tr>
+    	<tr>
+    	  <td>韻目</td>
+    	  <td>
+    	  	<a href="{% url 'tcenghyonhtsen-yonh_miuk_page' sieux_yonh.yonhMiuk.dzih %}">{{sieux_yonh.yonhMiuk}}</a>
+    	  </td>
+    	</tr>
+    	<tr>
+    	  <td>聲調</td>
+    	  <td>{{sieux_yonh.yonhMiuk.deuh|deuh}}聲</td>
+    	</tr>
+    	<tr>
+    	  <td>韻部</td>
+    	  <td>{{sieux_yonh.yonhMiuk.bux}}</td>
+    	</tr>
+      <tr>
+        <td>譯訓</td>
+        <td nowrap>
+          <a href="{% url 'tcenghyonhtsen-transcription_legend_page' %}">
+            <ipa>{{sieux_yonh.ipa}}</ipa>
+            <span class="horizontal-ltr">({{sieux_yonh.jamo}})</span>            
+          </a>
+        </td>
+      </tr>
+      {% if qim_bjin_set %}
+        <tr class="display-unless-with-vertical-layout">
+          <td colspan="2">
+            <div>
+              {% for qim_bjin in qim_bjin_set %}
+                <table class="table">
+                  <tr>
+                    {% for tone, ipa in qim_bjin.tone_to_ipa_mapping %}
+                      <td style="border:none;">{{tone}}</td>
+                    {% endfor %}
+                  </tr>
+                  <tr>
+                    {% for tone, ipa in qim_bjin.tone_to_ipa_mapping %}
+                      <td style="border:none;">{{ipa|beautify_mandarin_ipa}}</td>
+                    {% endfor %}
+                  </tr>
+                </table>
+                <p><audio controls src="/static/audio/GhungMyoxTcenghYonhTsen/{{qim_bjin.filename}}"></p>                
+              {% endfor %}
+            </div>
+          </td>
+        </tr>
+      {% endif %}      
+    </table>
+  </div>
+</div>
+<div class="row">
+  <div class="span8">
+    {% if sieux_yonh.dzih_set.all %}
+      <h2>字頭</h2>
+      {% for dzih in sieux_yonh.dzih_set.all|dictsort:"cioTriungZiox" %}
+        {{dzih}}
+      {% endfor %}
+    {% endif %}
+    {% if sieux_yonh.koxqim_set.all %}
+      <h2>古音</h2>
+      {% for dzih in sieux_yonh.koxqim_set.all %}
+        {{dzih}}
+      {% endfor %}
+    {% endif %}
+    {% if sieux_yonh.jitdzih_set.all %}
+      <h2>逸字</h2>
+      {% for dzih in sieux_yonh.jitdzih_set.all %}
+        {{dzih}}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+<div class="row">
+  <div class="span9">
+    <h2>書影</h2>
+    <ul class="thumbnails">
+      {% for cio in sieux_yonh.ziox_cio %}
+        <li class="span3">
+          <div class="thumbnail">
+            <a href="{% url 'tcenghyonhtsen-cio_page' cio.kyenh cio.jep %}">
+              <img src="/static/img/GhungMyoxTcenghYonhTsen/{{cio.kyenh}}/thumb/{{cio.filename}}" alt="" >
+            </a>
+            <p>
+              <title-cn>洪武正韻牋</title-cn>第{{cio.kyenh|sryoh}}卷第{{cio.jep|sryoh}}䈎
+            </p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}

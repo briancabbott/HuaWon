@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+{% load ytenx %}
+{% block kiemx_sriek_active %}active{% endblock %}
+{% block caption %}檢索 - 韻典網{% endblock %}
+{% block body %}
+<div class="span12">
+  <div class="page-header">
+    <h1>高級檢索 <small>跨韻書查詢</small></h1>
+  </div>
+  <p class="display-only-with-vertical-layout" style="margin-top:3em;">所欲詢字輸入于此凡列不過五字者皆可一回倂詢也</p>
+  <div id="tb-sriek" class="tb-with-table-by-layout-direction">
+    <form class="form-horizontal" action="{% url 'zim' %}">
+      <fieldset>
+        <div class="control-group horizontal-cn">
+          <label class="control-label display-unless-with-vertical-layout" for="dzih">字</label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="dzih" name="dzih">
+            <p class="help-block display-unless-with-vertical-layout">在此輸入要查詢的漢字，每次可查詢不超過五個字。</p>
+          </div>
+        </div>
+        <div class="write-as-layout-direction"> 
+          <br class="display-only-with-vertical-layout">
+          <div class="control-group">
+            <label class="control-label">檢索範圍</label>
+            <br class="display-only-with-vertical-layout">
+            <br class="display-only-with-vertical-layout">            
+            <div class="controls">
+              <label class="checkbox inline">
+                <input type="checkbox" name="kyonh" value="1" checked="checked">
+                廣韻
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="trngyan" value="1" checked="checked">
+                中原音韻
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="tcyts" value="1" checked="checked">
+                洪武正韻牋
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="pyonh" value="1" checked="checked">
+                分韻撮要
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" name="dciangx" value="1" checked="checked">
+                上古音系
+              </label>
+            </div>
+          </div>
+          <div class="control-group write-as-layout-direction">
+            <label class="control-label">異體字轉換</label>
+            <br class="display-only-with-vertical-layout">
+            <br class="display-only-with-vertical-layout">
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" name="jtkb" value="1" checked="checked">
+                轉換簡化字
+              </label>
+              <p class="help-block">如：「专」「專」、「干」「幹」「乾」</p>
+              <label class="checkbox">
+                <input type="checkbox" name="jtdt" value="1" checked="checked">
+                轉換全等異體字
+              </label>
+              <p class="help-block">如：「爲」「為」、「裏」「裡」</p>
+              <label class="checkbox">
+                <input type="checkbox" name="jtkd" value="1" checked="checked">
+                轉換語義交疊異體字
+              </label>
+              <p class="help-block">如：「娘」「孃」、「吊」「弔」</p>
+              <label class="checkbox">
+                <input type="checkbox" name="jtgt" value="1" checked="checked">
+                其他異體字
+              </label>
+              <p class="help-block">如：「陰」「隂」、「歴」「厯」</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-actions horizontal-cn">
+          <button type="submit" class="btn btn-primary">檢索</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+{% endblock %}

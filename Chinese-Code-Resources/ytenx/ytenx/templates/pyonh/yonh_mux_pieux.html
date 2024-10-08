@@ -1,0 +1,15 @@
+{% extends "pyonh/poh.html" %}
+{% load ytenx %}
+{% block pyonh_yonh_active %}active{% endblock %}
+{% block title %}韻母表 - 分韻撮要{% endblock %}
+{% block keywords %}韻母, 分韻撮要, {% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1>韻母表 <small>分韻撮要</small></h1>
+</div>
+<div class="row">
+  <div class="span5">
+    {% include "pyonh/pohpyon/yonh_mux_pieux.html" with yonh_mux_pieux=yonh_mux_pieux only %}
+  </div>
+</div>
+{% endblock %}

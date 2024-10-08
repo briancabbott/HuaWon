@@ -1,0 +1,47 @@
+{% extends "kyonh/layout.html" %}
+{% load ytenx %}
+{% block kyonh_dzih_active %}active{% endblock %}
+{% block title %}{{dzih}} - 字 - 廣韻{% endblock %}
+{% block keywords %}{{dzih}}, 字, 反切, 廣韻, {% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1>{{dzih}} <small>廣韻{{dzih.sieuxYonh}}小韻</small></h1>
+</div>
+<div class="row">
+  <div class="span4">
+    <table class="table table-bordered">
+    	<tr>
+    	  <td>小韻</td>
+    	  <td>
+    	  	<a href="{% url 'kyonh-sieux_yonh_page' dzih.sieuxYonh.ziox %}">{{dzih.sieuxYonh}}</a>
+    	  </td>
+    	</tr>
+    	<tr>
+    	  <td>序號</td>
+    	  <td>{{dzih.ziox|tsiowng_ghwaeng_srwioh:request}}</td>
+    	</tr>
+    	<tr>
+    	  <td>反切</td>
+    	  <td>
+    	  	{% if dzih.sieuxYonh.pyanx %}
+    	  		<a href="{% url 'kyonh-pyanx_dciangx_page' dzih.sieuxYonh.pyanx.dciangx.dzih %}">{{dzih.sieuxYonh.pyanx.dciangx}}</a><a href="{% url 'kyonh-pyanx_ghrax_page' dzih.sieuxYonh.pyanx.ghrax.dzih %}">{{dzih.sieuxYonh.pyanx.ghrax}}</a>
+    	  	{% else %}
+    	  		無
+    	  	{% endif %}
+    	  </td>
+    	</tr>
+    </table>
+  </div>
+</div>
+
+<blockquote>{{dzih.ngieh}}</blockquote>
+
+<div class="row">
+  <div class="span8">
+    <h2>書影</h2>
+    {% include "kyonh/cio_do.html" with cio_do_pieux=dzih.sieuxYonh.cio.all only %}
+  </div>
+</div>
+
+{% endblock %}
+

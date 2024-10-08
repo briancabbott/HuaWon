@@ -1,0 +1,28 @@
+{% extends "kyonh/layout.html" %}
+{% load ytenx %}
+{% block kyonh_ghrax_dzih_active %}active{% endblock %}
+{% block title %}{{ghrax}} - 反切下字 - 廣韻{% endblock %}
+{% block keywords %}{{ghrax}}, 反切下字, 廣韻 {% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1>{{ghrax}} <small>廣韻反切下字</small></h1>
+</div>
+<div class="row">
+  <div class="span4">
+  <h2>韻母</h2>
+  <p>
+    {% for yonh in ghrax.yonh.all %}
+      <a class="yonh" href="{% url 'kyonh-yonh_mux_page' yonh.mjeng %}">{{yonh}}</a>
+    {% endfor %}
+  </p>
+  </div>
+</div>
+<div class="span8">
+  <div class="row">
+    <h2>小韻</h2>
+    {% for sieux in ghrax.sieuxYonh %}
+      <a href="{% url 'kyonh-sieux_yonh_page' sieux.ziox %}">{{sieux}}</a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

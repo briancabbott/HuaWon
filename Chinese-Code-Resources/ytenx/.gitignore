@@ -1,0 +1,7 @@
+*.pyc
+*.sqlite
+ENV
+res
+ytenx/static/files
+ytenx/static/img
+ytenx/static/audio

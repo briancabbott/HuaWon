@@ -1,0 +1,7 @@
+child_process(14433)::clone(https://github.com/CLUEbenchmark/KGQA):stderr:data: Cloning into 'undefined\CLUE--11-12-2023--duANbZzNZ1eL5j3AEBu3qr/KGQA'...
+child_process(14433)::clone(https://github.com/CLUEbenchmark/KGQA):stderr:data: POST git-upload-pack (175 bytes)
+child_process(14433)::clone(https://github.com/CLUEbenchmark/KGQA):stderr:data: POST git-upload-pack (202 bytes)
+child_process(14433)::clone(https://github.com/CLUEbenchmark/KGQA):stderr:data: remote: Enumerating objects: 6, done.        
+remote: Counting objects:  16% (1/6)        remote: Counting objects:  33% (2/6)        remote: Counting objects:  50% (3/6)        remote: Counting objects:  66% (4/6)        remote: Counting objects:  83% (5/6)        remote: Counting objects: 100% (6/6)        child_process(14433)::clone(https://github.com/CLUEbenchmark/KGQA):stderr:data: remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0        
+child_process(14433)::clone(https://github.com/CLUEbenchmark/KGQA):stderr:data: Receiving objects:  16% (1/6)Receiving objects:  33% (2/6)child_process(14433)::clone(https://github.com/CLUEbenchmark/KGQA):stderr:data: Resolving deltas:   0% (0/1)child_process(14433)::clone(https://github.com/CLUEbenchmark/KGQA):stderr:data: Resolving deltas: 100% (1/1), done.
+child_process(14433)::clone(https://github.com/CLUEbenchmark/KGQA):close()

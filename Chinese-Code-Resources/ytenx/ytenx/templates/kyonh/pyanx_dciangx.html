@@ -1,0 +1,28 @@
+{% extends "kyonh/layout.html" %}
+{% load ytenx %}
+{% block kyonh_dciangx_dzih_active %}active{% endblock %}
+{% block title %}{{dciangx}} - 反切上字 - 廣韻{% endblock %}
+{% block keywords %}{{dciangx}}, 反切上字, 廣韻 {% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1>{{dciangx}} <small>廣韻反切上字</small></h1>
+</div>
+<div class="row">
+  <div class="span4">
+  <h2>聲母</h2>
+  <p>
+    {% for cjeng in dciangx.cjeng.all %}
+      <a href="{% url 'kyonh-cjeng_mux_page' cjeng.dzih %}">{{cjeng}}</a>
+    {% endfor %}
+  </p>
+  </div>
+</div>
+<div class="span8">
+  <div class="row">
+    <h2>小韻</h2>
+    {% for sieux in dciangx.sieuxYonh %}
+      <a href="{% url 'kyonh-sieux_yonh_page' sieux.ziox %}">{{sieux}}</a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

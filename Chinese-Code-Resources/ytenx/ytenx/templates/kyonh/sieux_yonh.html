@@ -1,0 +1,142 @@
+{% extends "kyonh/layout.html" %}
+{% load ytenx %}
+{% block kyonh_sieux_yonh_active %}active{% endblock %}
+{% block title %}{{sieux_yonh}} - 小韻 - 廣韻{% endblock %}
+{% block keywords %}{{sieux_yonh}}, 小韻, {{sieux_yonh.pyanx}}, 反切, 廣韻, {% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1>{{sieux_yonh}} <small>廣韻第{{sieux_yonh.ziox|sryoh}}小韻</small></h1>
+</div>
+<div class="row">
+  <div class="span4">
+    <table class="table table-bordered">
+    	<tr>
+    	  <td>小韻</td>
+    	  <td>{{sieux_yonh}}</td>
+    	</tr>
+    	<tr>
+    	  <td>序號</td>
+    	  <td>{{sieux_yonh.ziox|tsiowng_ghwaeng_srwioh:request}}</td>
+    	</tr>
+    	<tr>
+    	  <td>反切</td>
+    	  <td>
+    	  	{% if sieux_yonh.pyanx %}
+    	  		<a href="{% url 'kyonh-pyanx_dciangx_page' sieux_yonh.pyanx.dciangx.dzih %}">{{sieux_yonh.pyanx.dciangx}}</a><a href="{% url 'kyonh-pyanx_ghrax_page' sieux_yonh.pyanx.ghrax.dzih %}">{{sieux_yonh.pyanx.ghrax}}</a>
+    	  	{% else %}
+    	  		無
+    	  	{% endif %}
+    	  </td>
+    	</tr>
+    	<tr>
+    	  <td>聲母</td>
+    	  <td>
+    	  	<a href="{% url 'kyonh-cjeng_mux_page' sieux_yonh.cjeng.dzih %}">
+    	  		{{sieux_yonh.cjeng}}
+    	  	</a>
+    	  </td>
+    	</tr>
+    	<tr>
+    	  <td>韻母</td>
+    	  <td>
+    	  	<a class="yonh" href="{% url 'kyonh-yonh_mux_page' sieux_yonh.yonh.mjeng %}">
+    	  		{{sieux_yonh.yonh}}
+    	  	</a>
+    	  </td>
+    	</tr>
+    	<tr>
+    	  <td>韻目</td>
+    	  <td>
+    	  	<a class="yonh" href="{% url 'kyonh-yonh_miuk_page' sieux_yonh.yonhMiuk.dzih %}">
+    	  		{{sieux_yonh.yonhMiuk}}
+    	  	</a>
+    	  </td>
+    	</tr>
+    	<tr>
+    	  <td>調</td>
+    	  <td>{{sieux_yonh.yonhMiuk.deuh|deuh}}聲</td>
+    	</tr>
+    	<tr>
+    	  <td>等</td>
+    	  <td>{{sieux_yonh.yonh.tongx|sryoh}}等</td>
+    	</tr>
+    	<tr>
+    	  <td>呼</td>
+    	  <td>{{sieux_yonh.yonh.ho|ho}}口</td>
+    	</tr>
+    	<tr>
+    	  <td>韻系</td>
+    	  <td class="yonh">{{sieux_yonh.yonh.gheh}}</td>
+    	</tr>
+    	<tr>
+    	  <td>韻攝</td>
+    	  <td>{{sieux_yonh.yonh.gheh.cjep}}</td>
+    	</tr>
+    	<tr>
+    	  <td>廣韻目次</td>
+    	  <td>{{sieux_yonh.yonhMiuk.tshiih.kyenh}}{{sieux_yonh.yonhMiuk.tshiih.tshiih|sryoh}}{{sieux_yonh.yonhMiuk.tshiih.dzih}}</td>
+    	</tr>
+    </table>
+  </div>
+  <div class="span3">
+    <table class="table table-bordered">
+    {% for mjeng, ngix in sieux_yonh.ngix.items %}
+      {% if ngix %}
+        <tr>
+          <td>{{mjeng}}</td>
+          <td><span class="horizontal-ltr">{{ngix}}</span></td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+    </table>
+    <table class="table table-bordered">
+    {% for mjeng, preng in sieux_yonh.preng.items %}
+      {% if preng %}
+        <tr>
+          <td>{{mjeng}}</td>
+          <td><span class="horizontal-ltr">{{preng}}</span></td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+    </table>
+    <table class="table table-bordered">
+      <tr>
+        <td>推導中州音</td>
+        <td>
+          <span class="horizontal-ltr">
+            {{sieux_yonh.dauh.tcengh|beautify_mandarin_ipa}}
+            {% if sieux_yonh.dauh.tcengh|beautify_mandarin_ipa != sieux_yonh.dauh.tcengh|neom_khiowk|beautify_mandarin_ipa %}
+              ({{sieux_yonh.dauh.tcengh|neom_khiowk|beautify_mandarin_ipa}})
+            {% endif %}
+          </span>
+        </td>
+      </tr>
+      {% if sieux_yonh.dauh.putonghua %}
+        <tr>
+          <td>推導普通話</td>
+          <td><span class="horizontal-ltr">{{sieux_yonh.dauh.putonghua}}</span></td>
+        </tr>
+      {% endif %}
+    </table>
+  </div>
+</div>
+<div class="row">
+  <div class="span8">
+  <h2>字</h2>
+  <table class="table table-condensed table-bordered">
+    {% for dzih in sieux_yonh.dzih_set.all %}
+    	<tr>
+    	  <td><a href="{% url 'kyonh-dzih' dzih.ziox %}">{{dzih}}</a></td>
+    	  <td>{{dzih.ngieh}}</td>
+    	</tr>
+    {% endfor %}
+  </table>
+  </div>
+</div>
+<div class="row">
+  <div class="span8">
+    <h2>書影</h2>
+    {% include "kyonh/cio_do.html" with cio_do_pieux=sieux_yonh.cio.all only %}
+  </div>
+</div>
+{% endblock %}

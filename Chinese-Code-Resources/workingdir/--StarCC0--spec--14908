@@ -1,0 +1,7 @@
+child_process(14908)::clone(https://github.com/StarCC0/spec):stderr:data: Cloning into 'undefined\SCC--11-12-2023--8ykxyCRSeMwg6mioziwTsK/spec'...
+child_process(14908)::clone(https://github.com/StarCC0/spec):stderr:data: POST git-upload-pack (175 bytes)
+child_process(14908)::clone(https://github.com/StarCC0/spec):stderr:data: POST git-upload-pack (202 bytes)
+child_process(14908)::clone(https://github.com/StarCC0/spec):stderr:data: remote: Enumerating objects: 6, done.        
+remote: Counting objects:  16% (1/6)        remote: Counting objects:  33% (2/6)        remote: Counting objects:  50% (3/6)        child_process(14908)::clone(https://github.com/StarCC0/spec):stderr:data: remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0        
+child_process(14908)::clone(https://github.com/StarCC0/spec):stderr:data: Receiving objects:  16% (1/6)Receiving objects:  33% (2/6)child_process(14908)::clone(https://github.com/StarCC0/spec):stderr:data: Receiving objects:  50% (3/6)Receiving objects:  66% (4/6)Receiving objects:  83% (5/6)child_process(14908)::clone(https://github.com/StarCC0/spec):stderr:data: Receiving objects: 100% (6/6)Receiving objects: 100% (6/6), done.
+child_process(14908)::clone(https://github.com/StarCC0/spec):close()

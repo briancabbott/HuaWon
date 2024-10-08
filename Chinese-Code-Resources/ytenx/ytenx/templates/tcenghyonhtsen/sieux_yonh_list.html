@@ -1,0 +1,45 @@
+{% extends "tcenghyonhtsen/layout.html" %}
+{% load ytenx %}
+{% block tcenghyonhtsen_sieux_yonh_active %}active{% endblock %}
+{% block title %}小韻 - 洪武正韻牋{% endblock %}
+{% block keywords %}小韻, 洪武正韻牋, {% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1>小韻表 <small>洪武正韻牋</small></h1>
+</div>
+<div class="row tb-with-table-by-layout-direction">
+  <div class="span6">      
+      <table class="table table-bordered table-condensed">
+    	<tr>
+    	  <th>次序</th>
+    	  <th>小韻</th>
+    	  <th>韻目</th>
+    	  <th>反切</th>
+    	  <th>聲調</th>
+    	</tr>
+    	{% for sieux_yonh in sieux_yonh_list %}
+    	<tr>
+        <td>{{sieux_yonh.cioTriungZiox|tsiowng_ghwaeng_srwioh:request}}</td>
+        <td>
+          <a href="{% url 'tcenghyonhtsen-sieux_yonh_page' sieux_yonh.ziox %}">{{sieux_yonh.taj}}</a>
+        </td>
+    	  <td>
+    	  	<a href="{% url 'tcenghyonhtsen-yonh_miuk_page' sieux_yonh.yonhMiuk.dzih %}">{{sieux_yonh.yonhMiuk}}</a>
+    	  </td>
+        <td>
+    	  	{% if sieux_yonh.pyanx %}
+    	  		<a href="">{{sieux_yonh.pyanx.dciangx}}</a><a href="">{{sieux_yonh.pyanx.ghrax}}</a>
+    	  	{% else %}
+    	  		無
+    	  	{% endif %}
+        </td>
+    	  <td>{{sieux_yonh.yonhMiuk.deuh|deuh}}</td>
+    	</tr>
+    	{% endfor %}
+    </table>
+    {% include "pagination.html" with list=sieux_yonh_list only %}
+  </div>
+</div>
+
+{% endblock %}
+
